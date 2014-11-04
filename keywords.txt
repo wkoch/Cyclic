@@ -1,0 +1,13 @@
+# Datatypes
+
+Cyclic  KEYWORD1
+
+# Methods and Functions
+
+start   KEYWORD2
+stop    KEYWORD2
+reset   KEYWORD2
+update  KEYWORD2
+now     KEYWORD2
+last    KEYWORD2
+cycles  KEYWORD2
