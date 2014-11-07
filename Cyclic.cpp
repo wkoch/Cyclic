@@ -48,8 +48,7 @@ void Cyclic::stop() {
   }
 }
 
-// TODO: Este é o auto-reset, deve ser privado. Preciso implementar o reset manual e criar o exemplo manual.
-// Manual reset for the cycle.
+// Resets the cycle.
 void Cyclic::reset() {
   if (_active && _now >= _min) {
     _last = _now;
@@ -76,7 +75,6 @@ unsigned long Cyclic::time() {
   }
 }
 
-// TODO insert a version of now() that updates before returning time.
 // Returns the current time of the cycle.
 unsigned long Cyclic::now() {
   if (_active) {
