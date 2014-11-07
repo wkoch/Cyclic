@@ -13,9 +13,10 @@ void setup() {
 }
 
 void loop() {
-  blink.update(); // Updates de cycle clock.
+  blink.update(); // Updates de cycle clock. Calls the millis() interrupt.
   // Tests the cycle position, if between 1000 and 2000...
-  if (blink.now() >= 1000 && blink.now() <= 2000) {
+  if (blink.time() >= 1000 && blink.time() <= 2000) {
+    // blink.time() just returns the time stored since the last blink.update().
     digitalWrite(led, HIGH);
   } else {
     digitalWrite(led, LOW);

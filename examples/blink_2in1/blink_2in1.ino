@@ -17,13 +17,13 @@ void setup() {
 void loop() {
   blink.update(); // Updates the cycle clock.
   // Tests the cycle position, if between 1000 and 2000...
-  if (blink.now() >= 1000 && blink.now() <= 2000) {
+  if (blink.time() >= 1000 && blink.time() <= 2000) {
     digitalWrite(led, HIGH);
   } else {
     digitalWrite(led, LOW);
   }
 
-  if (blink.now() >= 0 && blink.now() <= 1000) {
+  if (blink.time() >= 0 && blink.time() <= 1000) {
     digitalWrite(led2, HIGH);
   } else {
     digitalWrite(led2, LOW);

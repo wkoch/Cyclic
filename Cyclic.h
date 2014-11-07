@@ -1,7 +1,7 @@
 /*
-  Cyclic.cpp - v1.0
-  Library for millis-based cycle control
-  Created by William Koch, November 04, 2014.
+  Cyclic.cpp - v1.1
+  Library for millis-based cycle control.
+  Created by William Koch, November 07, 2014.
   Released into the public domain.
 */
 
@@ -13,20 +13,25 @@
 class Cyclic {
   public:
     // Manual control, no auto-reset.
+    // USAGE: Cyclic Name = Cyclic();
     Cyclic();
 
     // Auto-resets at max value
     // Manual reset always available.
+    // USAGE: Cyclic Name(number);
     Cyclic(unsigned long max);
 
     // Auto-resets at max value.
     // Manual reset only between min and max.
+    // USAGE: Cyclic Name(Number1, Number2);
     Cyclic(unsigned long max, unsigned long min);
 
     void start();
     void stop();
-    void reset();
+    boolean status();
     void update();
+    void reset();
+    unsigned long time();
     unsigned long now();
     unsigned long last();
     unsigned long cycles();
