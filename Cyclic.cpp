@@ -5,7 +5,6 @@
   Released into the public domain.
 */
 
-#include "Arduino.h"
 #include "Cyclic.h"
 
 // Manual control, no auto-reset.
