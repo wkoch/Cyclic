@@ -1,6 +1,6 @@
 # Cyclic
 
-Small library for millis-based cycle control. Simple to use, 4 examples included.
+Small Arduino library for millis-based cycle control. Simple to use, 4 examples included.
 
 **Tested on an Arduino Due only.**
 
@@ -68,6 +68,12 @@ Resets your cycle, Cyclic is like a chronometer, when started it will count from
 
     objectName.reset();
 
+#### reboot()
+
+Cleans everything, leaves you cycle like new, you cycle clock and counter are reset to 0. Call it like this:
+
+    objectName.reboot();
+
 #### time()
 
 Returns the time stored on the last call to update(). This is a great way to get the current time in big conditionals without doing many calls to the millis() interrupt. Calling millis() many times in your code may or may not make a difference in your project, but you have the choice. time() yields the same result every time, unless update() is called in between:
@@ -91,6 +97,12 @@ It's exactly the same as time, except that it is for lazy people, now() always c
 Returns the time duration from the last cycle, if you auto-reset your cycle every 2 seconds, last() will return 2000 ms, if you do a manual reset at 1.2 seconds, last() will return the last cycle duration of 1200 ms.
 
     objectName.last();
+
+#### cycle()
+
+Returns the max cycle time defined when you created the Cyclic Object. Good if you need to know your cycle duration.
+
+    objectName.cycle();
 
 #### cycles()
 

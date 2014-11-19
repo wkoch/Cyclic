@@ -1,6 +1,6 @@
 /*
-  Cyclic.cpp - v1.1
-  Library for millis-based cycle control.
+  Cyclic.cpp - v1.2
+  Arduino library for millis-based cycle control.
   Created by William Koch, November 07, 2014.
   Released into the public domain.
 */
@@ -31,9 +31,11 @@ class Cyclic {
     boolean status();
     void update();
     void reset();
+    void reboot();
     unsigned long time();
     unsigned long now();
     unsigned long last();
+    unsigned long cycle();
     unsigned long cycles();
   private:
     unsigned long _min, _max, _start, _now, _last, _cycles;
