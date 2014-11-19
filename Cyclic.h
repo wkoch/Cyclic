@@ -1,7 +1,7 @@
 /*
-  Cyclic.cpp - v1.2
+  Cyclic - v1.2 - November 19, 2014.
   Arduino library for millis-based cycle control.
-  Created by William Koch, November 07, 2014.
+  Created by William Koch.
   Released into the public domain.
 */
 
