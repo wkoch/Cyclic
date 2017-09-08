@@ -1,16 +1,16 @@
 # Datatypes
 
-Cyclic  KEYWORD1
+Cyclic	KEYWORD1
 
 # Methods and Functions
 
-start   KEYWORD2
-stop    KEYWORD2
-reset   KEYWORD2
-reboot  KEYWORD2
-update  KEYWORD2
-time    KEYWORD2
-now     KEYWORD2
-last    KEYWORD2
-cycle   KEYWORD2
-cycles  KEYWORD2
+start	KEYWORD2
+stop	KEYWORD2
+reset	KEYWORD2
+reboot	KEYWORD2
+update	KEYWORD2
+time	KEYWORD2
+now	KEYWORD2
+last	KEYWORD2
+cycle	KEYWORD2
+cycles	KEYWORD2
